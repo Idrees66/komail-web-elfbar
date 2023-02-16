@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --heading_color: #0E4A7C;
+
+  --background: linear-gradient(41deg, #0674fd, #0674fd, 46%, #00d0f9);
+
+}
+
+
+
+body {
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+  /* max-width: 1150px; */
+}
+
+.brand_img_styling {
+  width: 14rem;
+  padding: 5% 7%;
+  /* width: 60%; */
+  height: auto;
+}
+
+.nav-wrapper {
+  max-width: 1600px;
+}
+
+.nav-item {
+  color: #0E4A7C !important;
+  font-weight: bold;
+
+}
+
+.wrapper {
+  /* max-width: 1600px; */
+  /* display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !; */
+  /* margin-bottom: 15vh; */
+
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url("./assets/hero.png");
+  /* background-image: url(./assets/background.jpg); */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* width: 100vw; */
+  height: 70vh;
+}
+
+.FlexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  /* background-color: #2f1d58; */
+  /* height: 80vh; */
+  overflow: auto;
+  flex-direction: row;
+  gap: 50px;
+  margin: 15vh 0;
+}
+
+.FlexContainer div {
+  width: 600px;
+  /* height: 400px; */
+  /* margin: 5px; */
+  /* background-color: lightblue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+}
+
+.img_styling {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  align-self: center;
+}
+
+.about-section h2 {
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 36px;
+  line-height: 42px;
+  font-family: "Poppins";
+
+}
+
+.about-section p {
+  font-style: normal;
+  /* font-weight: 300; */
+  font-size: 22px;
+  line-height: 28px;
+  text-align: justify;
+  color: grey;
+  font-family: "Poppins";
+}
+
+.brands-section h2 {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 36px;
+  line-height: 42px;
+  font-family: "Poppins";
+}
+
+.brands-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  /* background-color: #2f1d58; */
+  gap: 55px;
+  margin: 10vh 0;
+  flex-direction: row;
+}
+
+.brands-container .brand-img {
+  width: 130px;
+  /* height: 200px; */
+  object-fit: contain;
+  filter: opacity(0.5);
+  transition-duration: 0.5s;
+
+}
+
+.brands-container .brand-img:hover {
+  filter: opacity(1)
+}
+
+
+.footer-section {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  /* height: 400px; */
+}
+
+.footer-section span {
+
+  align-self: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 15px;
+
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  height: 400px;
+  /* background-color: #2f1d58; */
+
+
+  flex-direction: row;
+}
+
+
+.footer-left h5,
+.footer-right h5 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.footer-left h6 {
+  color: white;
+}
+
+.footer-left p {
+  color: #ACACAC;
+
+}
+
+.category-list-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+
+
+}
+
+.category-list {
+  color: #ACACAC;
+  /* width: 80px; */
+
+
+}
+
+.carousel-item {
+  background-color: #ACACAC;
+}
+
+.carousal-img {
+  width: 100%;
+  height: 90vh;
+}
+
+@media (max-width: 560px) {
+
+
+  .about-section p {
+    font-size: 16px;
+
+
+  }
+
+  .about-section {
+    padding: 0 5vw;
+  }
+
+  .footer-container {
+    height: auto;
+    padding: 10vh 0;
+    gap: 100px;
+    /* justify-content: space-around;
+    align-items: center;
+    align-content: center; */
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+    padding: 0 5vh;
+  }
+  .footer-section span {
+
+    font-size: 12px;
+}
+}
+@media (max-width: 1400px) {
+  .carousal-img {
+    height: auto;
+  }
+  .about-section p {
+    font-size: 18px;
+  
+  }
+
+  .FlexContainer div{
+    width: 450px ;
+  }
+  .brands-container .brand-img {
+    width: 100px;
+  }
+  
+}
